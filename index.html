@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" type="module"></script>
+</head>
+<body>
+    <div class="todo-controls">
+        <button class="todo-controls__button todo-controls__button_delete-all">Delete All</button>
+        <button class="todo-controls__button todo-controls__button_delete-last">Delete Last</button>
+        <form class="todo-controls__form" id="form">
+            <input id="todoInput" class="todo-controls__input" type="text" placeholder="Enter todo... ">
+            <button class="todo-controls__button todo-controls__button_add">Add</button>
+        </form>
+    </div>
+    <div class="filter-controls">
+        <div class="filter-controls__wrapper-counters">
+            <p class="filter-controls__counter filter-controls__counter_all"></p>
+            <p class="filter-controls__counter filter-controls__counter_completed"></p>
+        </div>
+        <button class="filter-controls__button filter-controls__button_show-all">Show All</button>
+        <button class="filter-controls__button filter-controls__button_show-completed">Show Completed</button>
+        <input class="filter-controls__search" type="search" placeholder="Search...">
+    </div>
+    <div id="root"></div>
+</body>
+</html>
